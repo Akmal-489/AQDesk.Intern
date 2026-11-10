@@ -1,0 +1,18 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { overflow-x: hidden; }
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* 16px stops iPhones from zooming in when you tap a field */
+input, select, textarea { font-size: 16px; }
+button { min-height: 44px; }   /* comfortable thumb size */
+
+@media (max-width: 768px) {
+  body.form-page { max-width: 100% !important; margin: 20px auto !important; padding: 0 16px !important; }
+  body.form-page input:not([type=radio]):not([type=checkbox]):not([type=file]),
+  body.form-page select,
+  body.form-page textarea { width: 100% !important; margin-bottom: 8px; }
+  body.form-page button { width: 100%; margin-top: 6px; }
+  body.form-page h2 { font-size: 22px; }
+  body.form-page div[style*="border"] { padding: 12px !important; }
+}
