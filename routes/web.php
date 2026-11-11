@@ -6,9 +6,10 @@ use Illuminate\Support\Facades\Route;
     return redirect('/home');
 });*/
 
-Route::get('/home', function(){
+Route::get('/', function(){
     return view('home');
 });
+Route ::redirect('/home', '/');
 
 Route::get('/login', function(){
     return view('login');
